@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="weixin-api",
-    version="1.0.0",
+    version="1.1.0",
     author="kerol",
     author_email="ikerol@163.com",
     description="weixin api",
@@ -20,5 +20,7 @@ setuptools.setup(
     ),
     install_requires=[
         'requests',
+        'ujson',
+        'pycrypto',
     ]
 )
