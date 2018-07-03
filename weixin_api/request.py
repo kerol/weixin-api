@@ -1,6 +1,7 @@
 # coding: utf-8
 import traceback
 import requests
+import ujson as json
 
 # --------------------------------------------------------------------------- #
 # requests
@@ -13,8 +14,8 @@ def _response(methods, url, **kwargs):
     try:
         if methods == 'params':
             res = requests.get(url, kwargs['params'], timeout=TIMEOUT)
-        elif methods == 'json':
-            res = requests.post(url, json=kwargs['json'], timeout=TIMEOUT)
+        elif methods == 'data':
+            res = requests.post(url, data=kwargs['data'], timeout=TIMEOUT)
         elif methods == 'files':
             res = requests.post(url, files=kwargs['files'], timeout=TIMEOUT)
         else:
@@ -35,7 +36,9 @@ def requests_get(url, params):
 
 
 def requests_post(url, data):
-    return _response('json', url, json=data)
+    data = json.dumps(data, ensure_ascii=False)
+    data = data.encode('utf8')
+    return _response('data', url, data=data)
 
 
 def requests_files(url, files):
