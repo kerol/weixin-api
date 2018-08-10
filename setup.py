@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="weixin-api",
-    version="1.1.1",
+    version="1.2.0",
     author="kerol",
     author_email="ikerol@163.com",
-    description="weixin api",
+    description="weixin api for miniprogram and minigame",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/kerol/weixin-api",
