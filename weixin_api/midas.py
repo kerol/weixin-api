@@ -1,8 +1,8 @@
 # coding: utf-8
 import time
 
-from .request import requests_post
-from .helper import sorted_str, hmac_sha256
+from weixin_api.request import requests_post
+from weixin_api.helper import sorted_str, hmac_sha256
 
 # --------------------------------------------------------------------------- #
 # 米大师

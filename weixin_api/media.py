@@ -1,5 +1,5 @@
 # coding: utf-8
-from .request import requests_get, requests_files
+from weixin_api.request import requests_get, requests_files
 
 # --------------------------------------------------------------------------- #
 # 临时素材接口

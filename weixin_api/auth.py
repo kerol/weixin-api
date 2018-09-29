@@ -4,7 +4,7 @@ import base64
 import ujson as json
 from Crypto.Cipher import AES
 
-from .request import requests_get
+from weixin_api.request import requests_get
 
 
 def access_token(app_id, secret):

@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="weixin-api",
-    version="1.3.2",
+    version="1.3.3",
     author="kerol",
     author_email="ikerol@163.com",
     description="weixin api for miniprogram and minigame",

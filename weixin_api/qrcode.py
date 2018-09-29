@@ -1,5 +1,5 @@
 # coding: utf-8
-from .request import requests_post
+from weixin_api.request import requests_post
 
 # --------------------------------------------------------------------------- #
 # 获取二维码
