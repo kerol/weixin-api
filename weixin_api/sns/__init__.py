@@ -1,6 +1,8 @@
 # coding: utf-8
 from weixin_api.request import requests_get
 
+from . import oauth2
+
 
 def userinfo(access_token, openid):
     """ 拉取用户信息 """
