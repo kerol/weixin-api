@@ -24,6 +24,7 @@ def _response(methods, url, **kwargs):
         traceback.print_exc()
         return False, None
     try:
+        res.encoding = 'utf-8'
         res = res.json()
         result = True if res.get('errcode', 0) == 0 else False
         return result, res
