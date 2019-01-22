@@ -6,3 +6,4 @@ from . import midas
 from . import qrcode
 from . import template
 from . import sns
+from . import ticket
